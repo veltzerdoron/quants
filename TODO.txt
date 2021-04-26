@@ -1,0 +1,41 @@
+*** Finish quants and upload it to pypi
+
+* work on model class hierarchy
+    * Finish the Dense AE classifier class and make its tests work
+
+Future improvements:
+    ** add testing evaluation results storage and exposure to user
+    ** add tests that check accuracy of results
+
+
+
+Done:
+
+Bugs-
+* The quantification entailment tests sometimes failed on "most" entails "some" edge cases,
+  caught and fixed (edge case was that most was defined as ab >= a_b instead of >)
+
+Classifiers-
+* Fixed accuracies of multi-label classifier
+* Wrote multi-label classifier class
+* Thought about and ruled out weight analyzer in classifier class
+* wrote code for teacher student
+    leave repeat at 1 to neutralize
+
+Quantifiers-
+* added test for random scenes
+* added test for contrastive quantifier learning and made it pass
+* improved quantifier classes
+    * multinomial distribution generation in fill and generation methods
+    * multinomial selection of counts
+    * quantifiers work according to constraints
+    * natural and non natural quantifiers in hierarchy
+    * unified all generate_scene methods under a single implementation with delegations
+* quantifiers kept in order
+* min max scene len (added code option to generate limited lengths of scenes for length generalization testing)
+
+* handled out of memory issue when running the package twice
+
+* write package tests for Quantifiers and Classifier
+* code cleanup
+* installed package locally and started working with it via notebook

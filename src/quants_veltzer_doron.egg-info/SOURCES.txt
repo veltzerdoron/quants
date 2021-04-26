@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/quants_veltzer_doron.egg-info/PKG-INFO
+src/quants_veltzer_doron.egg-info/SOURCES.txt
+src/quants_veltzer_doron.egg-info/dependency_links.txt
+src/quants_veltzer_doron.egg-info/top_level.txt
